@@ -1,0 +1,145 @@
+@font-face {
+	font-family: Avenir;
+	src: url(/src/fonts/avenir-book.ttf);
+	font-weight: 400;
+}
+::-moz-selection {
+	background: #fee372;
+}
+::selection {
+	background: #fee372;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+html, body,
+input, select, textarea {
+	font-family: 'Avenir', Arial, sans-serif;
+}
+div, h1, h2, h3, h4, h5, h6, p, b, a, tr, th, td, ul, ol, li, img {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.container {
+	background: #ffffff;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.container h1 {
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+}
+.container h2 {
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+}
+.container h3{
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+}
+.container p {
+	font-size: 14px;
+	font-weight: 100;
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+}
+.container a {
+	color: #2e66b6;
+	text-decoration: none;
+}
+.container a:hover {
+	text-decoration: underline;
+}
+.container a.button {
+	background: #fee372;
+	border-color: #fee372;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 7.5px;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background 0.2s;
+}
+.container a.button:hover {
+	background: transparent;
+	color: #fee372;
+}
+div.tiles {
+	margin: 0 -10px;
+}
+.tiles a {
+	background-color: #2e66b6;
+	box-sizing: border-box;
+	color: #ffffff;
+	float: left;
+	margin: 15px 10px 5px 10px;
+	padding: 15px 20px 22px 20px;
+	text-align: center;
+	width: calc(20% - 20px);
+	transition: opacity 0.3s;
+}
+.tiles a:hover {
+	cursor: hand;
+	opacity: 0.8;
+	text-decoration: none;
+}
+.tiles p {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0 15px 0;
+	text-transform: uppercase;
+}
+.tiles i {
+	font-size: 80px;
+}
+.tiles::after,
+.panel:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+@media (max-width: 1200px) {
+	.tiles a {
+		width: calc(25% - 20px);
+	}
+}
+@media (max-width: 900px) {
+	.container {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.container {
+		padding-top: 10px;
+		padding-bottom: 22px;
+	}
+	.tiles a {
+		width: calc(33.33% - 20px);
+	}
+}
+@media (max-width: 700px) {
+	.tiles a {
+		width: calc(50% - 20px);
+	}
+	.panel > div {
+		width: calc(100% - 20px);
+	}
+}
+@media (max-width: 400px) {
+	.tiles a {
+		width: calc(100% - 20px);
+	}
+}
