@@ -112,9 +112,29 @@ div.tiles {
 	clear: both;
 	display: table;
 }
+@media (max-width: 3000px) {
+	.container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.container {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.tiles a {
+		padding: 55px 20px 57px 20px;
+		width: calc(33.33% - 20px);
+	}
+	.tiles p {
+		font-size: 32px;
+	}
+	.tiles i {
+		font-size: 180px;
+	}
+}
 @media (max-width: 1200px) {
 	.tiles a {
-		width: calc(25% - 20px);
+		/*width: calc(25% - 20px);*/
 	}
 }
 @media (max-width: 900px) {
